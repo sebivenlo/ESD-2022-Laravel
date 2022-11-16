@@ -37,8 +37,8 @@ Tip, use an external tool like Postman to test the endpoint. API
 - Implement a basic API function within the car controller, returning all cars within the system.(Do not worry about authorization).
 - Implement an API endpoint by setting up the route in routes/api.php(Example is available in there for cars);
 
-Task 3 Sales Controller:
-- Create a migration to set up a Sales table(Make sure it is always in plural as this is the table naming convention that laravel/eloquent expects).
+Task 3 Sales Flow:
+- Create a migration to set up a Sales table, you may decide on the attributes yourself bonus points for setting up a relation between car and sales.(Make sure it is always in plural as this is the table naming convention that laravel/eloquent expects).
 - Create a Sales Model, when in doubt look at https://laravel.com/docs/9.x/eloquent#generating-model-classes.(Models can be adjusted in any way you want however just generating it is enough for eloquent to function).
 - Create a Sales Controller with an index and create/store method.
 - Create the routes for the sales controller in the web.php routes file(Examples are available within the file for cars).
@@ -51,3 +51,9 @@ Tips:
 - php artisan make:controller name
 - Vue files can be copied and adjusted to make a new front, data is received through props. For reference look back at the car controller and car overview.
 - For every change to vue files use yarn build to compile it to JS files.
+
+Relations
+- https://laravel.com/docs/9.x/eloquent-relationships
+
+Eloquent
+- https://laravel.com/docs/9.x/eloquent
