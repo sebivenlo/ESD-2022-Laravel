@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateCarValidation;
 use App\Models\Car;
+use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -42,8 +43,8 @@ class CarController extends Controller
 
     }
 
-    public function delete($carId) {
-        //TODO Create a route that references this method in web.php and implement the delete function.
-
+    public function apiGetCar($carId) {
+        return Car::where('id', $carId)->exists() ? response()->json(Car::find($carId)) :
+            throw new HttpResponseException(response()->json('Car not found', 404));
     }
 }
