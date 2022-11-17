@@ -6,6 +6,7 @@ Prerequisits:
 - You need to have docker installed and running.
 
 Windows:
+- create a new file called: .env and copy the contents of .env.example into this file.
 - run docker-compose up -d
 - Log into the container with: docker-compose exec --user=sail laravel.test bash
 - run: ./setup.sh
@@ -14,6 +15,7 @@ If the step above promps a permission denied error:
 - run: ./setup.sh again
 
 MacOS/Linux:
+- create a new file called: .env and copy the contents of .env.example into this file.
 - run: Docker/bin/sail up -d
 - Log into the container with: docker-compose exec --user=sail laravel.test bash
 - run: ./setup.sh
