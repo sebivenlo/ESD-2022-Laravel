@@ -20,11 +20,11 @@ fi
 
 if [[ "$yes_im_sure" == "y" ]] || [[ "$yes_im_sure" == "Y" ]]; then
 
-    # echo "Installing laravel dependencies"
-    # composer install
+    echo "Installing laravel dependencies"
+    composer install
 
-    # echo "Installing Vue dependencies"
-    # yarn
+    echo "Installing Vue dependencies"
+    yarn
 
     # Remove old logs
     echo "Removing old logs"
