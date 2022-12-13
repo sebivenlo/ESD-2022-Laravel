@@ -20,11 +20,11 @@ fi
 
 if [[ "$yes_im_sure" == "y" ]] || [[ "$yes_im_sure" == "Y" ]]; then
 
-    echo "Installing laravel dependencies"
-    composer install
+    # echo "Installing laravel dependencies"
+    # composer install
 
-    echo "Installing Vue dependencies"
-    yarn
+    # echo "Installing Vue dependencies"
+    # yarn
 
     # Remove old logs
     echo "Removing old logs"
@@ -43,10 +43,6 @@ if [[ "$yes_im_sure" == "y" ]] || [[ "$yes_im_sure" == "Y" ]]; then
     php artisan migrate
     echo "Seeding database"
     php artisan db:seed
-
-    # Run database migrations for local environment
-    echo "Running migrations"
-    php artisan migrate
 
 else
     echo "Refresh aborted"

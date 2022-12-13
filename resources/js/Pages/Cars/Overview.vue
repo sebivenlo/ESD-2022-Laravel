@@ -27,7 +27,7 @@
                                         <td class="border px-4 py-2 text-center">{{ car.type }}</td>
                                         <td class="border px-4 py-2 text-center">{{ car.price}}</td>
                                         <td class="border px-4 py-2 button-padding text-center">
-                                            <a :href="route('cars-edit', car.id)" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded m-1">show</a>
+                                            <a :href="route('cars-edit', car.id)" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded m-1">Edit</a>
                                         </td>
                                     </tr>
                                 </tbody>

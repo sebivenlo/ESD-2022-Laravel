@@ -15,7 +15,7 @@ class CarController extends Controller
         //TODO Use Eloquent to gather all cars and pass them to the Vue page below.
         //TIP Use the Car model.
         return Inertia::render('Cars/Overview', [
-            'cars' => 'Replace this string with the solution!',
+            'cars' => [],
         ]);
     }
 
@@ -32,7 +32,7 @@ class CarController extends Controller
 
     public function edit($carId) {
         //TODO return a specific car based on the parameter passed to the frontend.
-        return Inertia::render('Cars/edit', [
+        return Inertia::render('Cars/Edit', [
             'car' => "Replace this string with the solution!",
         ]);
     }
